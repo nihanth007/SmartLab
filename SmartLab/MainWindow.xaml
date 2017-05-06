@@ -5,8 +5,22 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SmartLab"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="SmartLab - Godavari Institute of Engineering and Technology" Height="600" Width="800"
+        Icon="Images/logo.png">
     <Grid>
-        
-    </Grid>
+        <TextBlock HorizontalAlignment="Left" Margin="83,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="57" Width="701" FontFamily="Verdana" FontSize="16"><Run Text="&#x9;"/><Run Text="Godavari Institute of Engineering and Technology"/><Run Text=" "/><Run Text="(A"/><Run Text="utonomous"/><Run Text=")"/><LineBreak/><Run Text=" &#x9;&#x9;       "/><Run Text="Computer Science And Engineering"/><LineBreak/><Run Text="&#x9;&#x9;&#x9;"/><Run Text="Student "/><Run Text="A"/><Run Text="dmission"/><Run Text=" Software"/></TextBlock>
+        <Image x:Name="TitleLogo" HorizontalAlignment="Left" Height="67" VerticalAlignment="Top" Width="83" Source="Images/logo.png" Margin="10,0,0,0">
+            <Image.OpacityMask>
+                <ImageBrush ImageSource="Images/logo.png" Stretch="None"/>
+            </Image.OpacityMask>
+        </Image>
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="91" Margin="0,0,-0.4,0" VerticalAlignment="Top" Width="794"/>
+        <TextBlock HorizontalAlignment="Left" Margin="256,251,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="65" Height="13"><Run Text="Username"/><Run Text=" :"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="256,278,0,0" TextWrapping="Wrap" Text="Password : " VerticalAlignment="Top" RenderTransformOrigin="0.545,1.805"/>
+        <TextBox Name="username" HorizontalAlignment="Left" Height="22" Margin="358,242,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="194"/>
+        <PasswordBox Name="password" HorizontalAlignment="Left" Margin="358,272,0,0" VerticalAlignment="Top" Width="194" Height="22"/>
+        <Button x:Name="Login" Content="Login" HorizontalAlignment="Left" Margin="358,318,0,0" VerticalAlignment="Top" Width="194" Click="Login_Click"/>
+        <TextBlock Name="statusMessage" HorizontalAlignment="Left" Margin="256,202,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="296"/>
+        <TextBlock Name="errorMessage" HorizontalAlignment="Left" Margin="358,297,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="194"/>
+       </Grid>
 </Window>
